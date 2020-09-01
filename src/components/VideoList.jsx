@@ -5,11 +5,10 @@ var VideoList = (props) => {
 
   return (
     <div className="video-list">
-      <ul>
-        { props.videos.map(video =>
-          <VideoListEntry video={video} />
-        )}
-      </ul>
+      { props.videos.map((video, i) => (
+        <VideoListEntry key={i} video={video} />
+      )
+      )}
     </div>
   );
 };
