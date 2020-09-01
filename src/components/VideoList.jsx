@@ -1,12 +1,14 @@
-import VideoListEntry from './VideoListEntry.js';
-import VideoPlayer from './VideoPlayer.js';
+// import VideoListEntry from './VideoListEntry.js';
+// import VideoPlayer from './VideoPlayer.js';
 
-var VideoList = (props) => {
+var VideoList = ({videos}) => {
 
   return (
     <div className="video-list">
-      { props.videos.map((video, i) => (
-        <VideoListEntry key={i} video={video} />
+      { videos.map((video, i) => (
+        <VideoListEntry
+          key={video.id.videoId}
+          video={video}/>
       )
       )}
     </div>
@@ -23,4 +25,5 @@ VideoList.propTypes = {
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope.
 // `var` declarations will only exist globally where explicitly defined.
-export default VideoList;
+// export default VideoList;
+window.VideoList = VideoList;
