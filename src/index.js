@@ -5,4 +5,4 @@ import exampleVideoData from './data/exampleVideoData.js';
 // import VideoList from './src/components/VideoList.js';
 
 
-ReactDOM.render(<App data={exampleVideoData}/>, document.getElementById('app'));
+ReactDOM.render(<App videos={exampleVideoData}/>, document.getElementById('app'));
