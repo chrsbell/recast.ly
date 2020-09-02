@@ -1,5 +1,6 @@
-// import VideoList from './VideoList.js';
-// import VideoPlayer from './VideoPlayer.js';
+import VideoList from './VideoList.js';
+import VideoPlayer from './VideoPlayer.js';
+import exampleVideoData from '../data/exampleVideoData.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -8,8 +9,8 @@ class App extends React.Component {
     // set this.state to equal the videos title
     // debugger;
     this.state = {
-      currentVideo: window.exampleVideoData[0],
-      videoList: window.exampleVideoData
+      currentVideo: exampleVideoData[0],
+      videoList: exampleVideoData
 
     // this.onVideoTitleClick = this.onVideoTitleClick.bind(this);
     // this.state = {videoList: props};
@@ -48,29 +49,30 @@ class App extends React.Component {
     );
   }
 }
+export default App;
 
-window.App = App;
-
-
-
-    // when clicked, adds the video cliked to the VideoPLayer
-    // currentVideo = this.state.currentVideo;
+// window.App = App;
 
 
-    // create a object
-    // change currentVideo to the one that is clicked
+
+// when clicked, adds the video cliked to the VideoPLayer
+// currentVideo = this.state.currentVideo;
 
 
-    // var currentVideo = this.state.videoList[0];
+// create a object
+// change currentVideo to the one that is clicked
 
-    // for (var i = 1; i < this.state.videoList.length; i++) {
-    //   // console.log('VideoListEntry #' + i + this.state.videoList[i].snippet.title);
-    //   // console.log('Video Title Clicked ' + this.state.currentVideosTitle);
-    //   // check if each title in video list matches the title that was clicked
-    //   if (this.state.videoList[i].snippet.title === this.state.currentVideosTitle) {
-    //     currentVideo = this.state.videoList[i];
-    //   }
-    // }
+
+// var currentVideo = this.state.videoList[0];
+
+// for (var i = 1; i < this.state.videoList.length; i++) {
+//   // console.log('VideoListEntry #' + i + this.state.videoList[i].snippet.title);
+//   // console.log('Video Title Clicked ' + this.state.currentVideosTitle);
+//   // check if each title in video list matches the title that was clicked
+//   if (this.state.videoList[i].snippet.title === this.state.currentVideosTitle) {
+//     currentVideo = this.state.videoList[i];
+//   }
+// }
 
 
 
@@ -79,4 +81,3 @@ window.App = App;
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
-// export default App;

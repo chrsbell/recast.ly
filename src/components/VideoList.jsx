@@ -1,5 +1,5 @@
-// import VideoListEntry from './VideoListEntry.js';
-// import VideoPlayer from './VideoPlayer.js';
+import VideoListEntry from './VideoListEntry.js';
+import VideoPlayer from './VideoPlayer.js';
 
 var VideoList = ({videos, onVideoTitleClick}) => {
 
@@ -27,5 +27,5 @@ VideoList.propTypes = {
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope.
 // `var` declarations will only exist globally where explicitly defined.
-// export default VideoList;
-window.VideoList = VideoList;
+export default VideoList;
+// window.VideoList = VideoList;

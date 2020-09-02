@@ -1,4 +1,4 @@
-// import exampleVideoData from '../data/exampleVideoData.js';
+import exampleVideoData from '../data/exampleVideoData.js';
 
 var VideoListEntry = ({video, onVideoTitleClick}) => {
   return (
@@ -24,5 +24,5 @@ VideoListEntry.propTypes = {
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
-// export default VideoListEntry;
-window.VideoListEntry = VideoListEntry;
+export default VideoListEntry;
+// window.VideoListEntry = VideoListEntry;
