@@ -1,14 +1,16 @@
 // import VideoListEntry from './VideoListEntry.js';
 // import VideoPlayer from './VideoPlayer.js';
 
-var VideoList = ({videos}) => {
+var VideoList = ({videos, onVideoTitleClick}) => {
 
   return (
     <div className="video-list">
       { videos.map((video, i) => (
         <VideoListEntry
           key={video.id.videoId}
-          video={video}/>
+          video={video}
+          onVideoTitleClick= {onVideoTitleClick}
+        />
       )
       )}
     </div>
